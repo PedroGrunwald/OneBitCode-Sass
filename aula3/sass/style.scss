@@ -1,0 +1,22 @@
+// nesting => anexar elementos dentro de uma so classe de
+//forma organizada, diminui linhas de codigo.
+
+.classe1 {
+  ul {
+    background-color: red;
+  }
+  li {
+    background-color: blue;
+    padding: 10px;
+  }
+
+  button{
+    background-color: green;
+    color: white;
+
+    &:hover {
+        background-color: red;
+        transition: 1s;
+    }
+}
+}
