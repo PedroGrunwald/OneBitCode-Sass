@@ -1,0 +1,18 @@
+// mixar informaçoes em um unico bloco
+
+@mixin text-style($color, $font-size, $font-family) {
+  color: $color;
+  font-size:$font-size;
+  font-family:$font-family
+}
+
+$primary-color:#ff4043;
+
+.text {
+  h1 {
+    @include text-style($primary-color,34px,Arial)
+  }
+  p {
+    @include text-style(blue,23px,sans-serif)
+  }
+}
